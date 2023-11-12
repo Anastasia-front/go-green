@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.86;
+  color: white;
+  background-color: $color-white;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $screen-tel) {
+    width: $screen-tel;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    width: $screen-tablet;
+    padding: 0 32px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $screen-desktop;
+    padding: 0 16px;
+  }
+}

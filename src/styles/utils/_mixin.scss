@@ -1,0 +1,17 @@
+@mixin tel {
+  @media screen and (min-width: $screen-tel) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $screen-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $screen-desktop) {
+    @content;
+  }
+}
