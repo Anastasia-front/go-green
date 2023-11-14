@@ -7,7 +7,7 @@ export const contact = "Contact us";
 export const pages = [
   {
     title: "Home",
-    route: "home",
+    route: "",
   },
   {
     title: "About",
