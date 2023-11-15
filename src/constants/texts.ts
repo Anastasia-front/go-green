@@ -1,4 +1,4 @@
-export const title = "GoGreen";
+export const companyName = { firstPart: "Go", secondPart: "Green" };
 
 export const buttons = { main: "join us", more: "Read more" };
 

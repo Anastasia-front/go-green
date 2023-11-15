@@ -19,9 +19,9 @@ $color-bg-linear: linear-gradient(
 );
 $color-overlay: rgba(0, 0, 0, 0.8);
 
-//shadow-text
-$shadow-text-: 0px 1px 0px rgba(0, 0, 0, 0.5);
-$shadow-text-3d: 0px 4px 3px rgba(0, 0, 0, 0.25);
+//text-shadow
+$text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+$text-shadow-3d: 0px 4px 3px rgba(0, 0, 0, 0.25);
 
 // hover
 $color-hover-btn-text: #000000;
@@ -37,3 +37,8 @@ $screen-desktop: 1200px;
 
 //cubic
 $cubic: 350ms cubic-bezier(0.1, 0.2, 0.3);
+
+//font-size
+$font-size-sm: 16px;
+$font-size-md: 24px;
+$font-size-lg: 48px;

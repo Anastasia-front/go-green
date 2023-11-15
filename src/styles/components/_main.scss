@@ -1,0 +1,20 @@
+.company-name {
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: $text-shadow-3d;
+  color: $color-white;
+
+  &__second-word {
+    color: $color-green-accent;
+  }
+}
+
+.logo {
+  @include flex(row, center, center);
+  gap: 20px;
+
+  &-svg {
+    width: 90px;
+    height: 90px;
+  }
+}

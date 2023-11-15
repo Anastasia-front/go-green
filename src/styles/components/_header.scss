@@ -1,8 +1,33 @@
 .header {
   height: 100px;
+  @include flex(row, space-between, center);
+  z-index: 7;
+  padding: 35px 0;
 }
 
 .nav {
-  @include flex(row, justify-content, center);
-  gap: 12px;
+  @include flex(row, space-between, center);
+  gap: 32px;
+  color: $color-white;
+  text-shadow: $text-shadow;
+}
+
+.active {
+  color: $color-green-accent;
+  padding-bottom: 1px;
+  a {
+    position: absolute;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    position: relative;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 6px;
+    background: $color-green-accent;
+  }
 }
