@@ -12,6 +12,7 @@
 .logo {
   @include flex(row, center, center);
   gap: 20px;
+  z-index: 10;
 
   &-svg {
     width: 90px;

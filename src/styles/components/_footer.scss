@@ -1,6 +1,59 @@
 .footer {
-  height: 100px;
-  background: $color-black;
-  color: $color-white;
+  @include flex(column, center, center);
   width: 100vw;
+}
+
+.white-block {
+  position: relative;
+}
+
+.contacts {
+  @include flex(column, flex-end, center);
+  gap: 12px;
+}
+
+.socials {
+  @include flex(row, center, center);
+  gap: 48px;
+}
+
+.social {
+  padding: 8px;
+  background: $color-bg-grey;
+  @include flex(row, center, center);
+  border-radius: 50%;
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.leaf {
+  padding: 50px;
+  width: 64px;
+  height: 64px;
+  @for $i from 0 through 3 {
+    $deg: $i * 90deg;
+    [data-rotation="#{$i}"] {
+      transform: rotate(#{$deg});
+    }
+  }
+}
+
+.black-block {
+  @include flex(column, center, center);
+  background-image: url("/public/footer.jpg");
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.black-overlay {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  background: $color-overlay;
 }

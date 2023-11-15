@@ -7,7 +7,7 @@ body {
   font-size: $font-size-sm;
   line-height: 1.6;
   color: $color-black;
-  background-color: $color-white;
+  background-color: $color-white-green;
   margin: 0;
   font-weight: 400;
 
@@ -52,6 +52,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+p {
+  color: $color-text-main;
 }
 
 ul {
