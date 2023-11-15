@@ -10,6 +10,14 @@
   gap: 32px;
   color: $color-white;
   text-shadow: $text-shadow;
+
+  a:hover {
+    text-shadow: $text-shadow-3d;
+  }
+
+  .active:hover {
+    text-shadow: none;
+  }
 }
 
 .active {

@@ -65,6 +65,11 @@ a {
   color: currentColor;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 10px;
