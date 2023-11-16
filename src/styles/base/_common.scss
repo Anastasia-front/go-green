@@ -67,8 +67,8 @@ button {
   margin: 0 auto;
   padding: 0 10px;
 
-  @media (min-width: $screen-tel) {
-    width: $screen-tel;
+  @media (min-width: $screen-mobile) {
+    width: $screen-mobile;
     padding: 0 20px;
   }
 

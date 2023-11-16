@@ -21,7 +21,7 @@
   @include flex(row, center, center);
   gap: 12px;
 
-  @include tel {
+  @include mobile {
     gap: 24px;
   }
   @include tablet {
@@ -74,7 +74,7 @@
   width: 64px;
   height: 64px;
 
-  @include tel {
+  @include mobile {
     padding: 15px 4vw;
   }
   @include tablet {

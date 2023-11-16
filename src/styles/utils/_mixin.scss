@@ -1,5 +1,5 @@
-@mixin tel {
-  @media screen and (min-width: $screen-tel) {
+@mixin mobile {
+  @media screen and (min-width: $screen-mobile) {
     @content;
   }
 }
