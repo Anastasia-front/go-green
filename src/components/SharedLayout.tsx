@@ -1,9 +1,13 @@
 import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import { Footer, Header } from ".";
 
 export const SharedLayout = () => {
+  const location = useLocation();
+
+  const isRootPath = location.pathname === "/";
+
   return (
     <>
       <Header />
@@ -12,7 +16,7 @@ export const SharedLayout = () => {
           <Outlet />
         </Suspense>
       </main>
-      <Footer />
+      {!isRootPath && <Footer />}
     </>
   );
 };

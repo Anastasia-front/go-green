@@ -1,8 +1,12 @@
 import { companyName } from "../constants";
 
-export function CompanyName() {
+interface Props {
+  className?: string;
+}
+
+export function CompanyName({ className = "" }: Props) {
   return (
-    <p className="company-name">
+    <p className={`company-name ${className}`}>
       <span>{companyName.firstPart}</span>
       <span className="company-name__second-word">
         {companyName.secondPart}

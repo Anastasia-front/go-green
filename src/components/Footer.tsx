@@ -75,6 +75,7 @@ export function Footer() {
           })()}
         </div>
       </div>
+
       <div className="black-block">
         <div className="black-overlay"></div>
         <Logo />

@@ -1,7 +1,8 @@
 $color-text-main: #545454;
 $color-grey: #d9d9d9;
 $color-bg-grey: #cfcfcf;
-$color-bg-grey-opacity: rgba(164, 164, 164, 0.1);
+$color-bg-green-opacity: rgb(169 228 97 / 9%);
+$color-bg-green-opacity-1: rgb(133 251 117 / 7%);
 $color-bg-grey-opacity-right: linear-gradient(
   271deg,
   rgba(0, 0, 0, 0.25) 0.85%,
@@ -43,3 +44,4 @@ $cubic: 350ms cubic-bezier(0.1, 0.2, 0.3);
 $font-size-sm: 16px;
 $font-size-md: 24px;
 $font-size-lg: 48px;
+$font-size-xl: 76px;

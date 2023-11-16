@@ -20,8 +20,28 @@ body {
   @include flex(column, center, center);
   min-height: 100vh;
   margin: 0;
-  width: 100vw;
+  min-width: 100vw;
   overflow-x: hidden;
+}
+
+#bg {
+  background-image: linear-gradient(
+      to bottom,
+      $color-bg-green-opacity,
+      $color-bg-green-opacity-1
+    ),
+    url("/public/home.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#right-gradient {
+  width: 100vw;
+  height: 100vh;
+  background-image: $color-bg-grey-opacity-right;
+  overflow-y: scroll;
 }
 
 main {
