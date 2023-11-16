@@ -1,17 +1,24 @@
 import { useMediaQuery } from "react-responsive";
 
-import leaf from "../assets/svg/plant.svg";
+import leafSvg from "../assets/svg/leaf.svg";
 
 import facebook from "../assets/svg/socials/facebook.svg";
 import instagram from "../assets/svg/socials/instagram.svg";
 import telegram from "../assets/svg/socials/telegram.svg";
 import whatsApp from "../assets/svg/socials/whatsApp.svg";
 
-import { contact } from "../constants";
+import { contact, leaf } from "../constants";
 
 import { Logo } from ".";
 
 const socials = [facebook, telegram, whatsApp, instagram];
+
+const getAltNameFromPath = (filePath: string) => {
+  const fileName = filePath.split("/").pop(); // Get the last part of the path (filename)
+  const nameWithoutExtension = fileName?.split(".")[0]; // Remove the file extension
+  // You can customize this to format the name as needed
+  return nameWithoutExtension;
+};
 
 export function Footer() {
   const mobile = useMediaQuery({ query: "(max-width:399px)" });
@@ -28,7 +35,7 @@ export function Footer() {
           <ul className="socials">
             {socials.map((social, index) => (
               <a key={index} className="social" href="#">
-                <img src={social} alt={social} />
+                <img src={social} alt={getAltNameFromPath(social)} />
               </a>
             ))}
           </ul>
@@ -55,8 +62,8 @@ export function Footer() {
               images.push(
                 <img
                   key={counter}
-                  src={leaf}
-                  alt="leaf"
+                  src={leafSvg}
+                  alt={leaf}
                   className="leaf"
                   data-rotation={counter}
                 />
