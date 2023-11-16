@@ -6,15 +6,17 @@ import { Logo } from "./Logo";
 
 export function Header() {
   return (
-    <header className="container header">
-      <Logo />
-      <nav className="nav">
-        {pages.map((page, index) => (
-          <NavLink key={index} to={`/${page.route}`}>
-            {page.title}
-          </NavLink>
-        ))}
-      </nav>
+    <header className="header">
+      <div className="container header-container">
+        <Logo />
+        <nav className="nav">
+          {pages.map((page, index) => (
+            <NavLink key={index} to={`/${page.route}`}>
+              {page.title}
+            </NavLink>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }
