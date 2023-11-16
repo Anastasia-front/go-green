@@ -19,6 +19,13 @@
     z-index: 3;
   }
 
+  &__black-gradient {
+    &::before {
+      height: 150px;
+      background: $color-grey-light;
+    }
+  }
+
   &-container {
     @include flex(row, space-between, center);
     padding: 35px 0;
