@@ -1,3 +1,5 @@
+import { useMediaQuery } from "react-responsive";
+
 import leaf from "../assets/svg/plant.svg";
 
 import facebook from "../assets/svg/socials/facebook.svg";
@@ -12,6 +14,12 @@ import { Logo } from ".";
 const socials = [facebook, telegram, whatsApp, instagram];
 
 export function Footer() {
+  const mobile = useMediaQuery({ query: "(max-width:399px)" });
+  const tablet = useMediaQuery({
+    query: "(max-width:1199px)",
+  });
+  const desktop = useMediaQuery({ query: "(min-width:1200px)" });
+
   return (
     <footer className="footer">
       <div className="white-block">
@@ -23,28 +31,42 @@ export function Footer() {
                 <img src={social} alt={social} />
               </a>
             ))}
-          </ul>{" "}
+          </ul>
         </div>
+        <div className="leaves">
+          {(() => {
+            const images = [];
+            let counter = 0;
 
-        {(() => {
-          const images = [];
-          let counter = 0;
+            const amountOfLeavesFunction = () => {
+              if (mobile) {
+                return 6;
+              } else if (tablet) {
+                return 8;
+              } else if (desktop) {
+                return 10;
+              } else {
+                return 11;
+              }
+            };
+            const amountOfLeaves = amountOfLeavesFunction();
 
-          while (counter < 10) {
-            images.push(
-              <img
-                key={counter}
-                src={leaf}
-                alt="leaf"
-                className="leaf"
-                data-rotation="#{rotation}"
-              />
-            );
-            counter++;
-          }
+            while (counter < amountOfLeaves) {
+              images.push(
+                <img
+                  key={counter}
+                  src={leaf}
+                  alt="leaf"
+                  className="leaf"
+                  data-rotation={counter}
+                />
+              );
+              counter++;
+            }
 
-          return images;
-        })()}
+            return images;
+          })()}
+        </div>
       </div>
       <div className="black-block">
         <div className="black-overlay"></div>

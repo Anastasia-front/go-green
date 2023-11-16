@@ -10,11 +10,26 @@
 .contacts {
   @include flex(column, flex-end, center);
   gap: 12px;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
 }
 
 .socials {
   @include flex(row, center, center);
-  gap: 48px;
+  gap: 12px;
+
+  @include tel {
+    gap: 24px;
+  }
+  @include tablet {
+    gap: 36px;
+  }
+  @include desktop {
+    gap: 48px;
+  }
 }
 
 .social {
@@ -22,22 +37,58 @@
   background: $color-bg-grey;
   @include flex(row, center, center);
   border-radius: 50%;
+  fill: $color-black;
 
   img {
     width: 48px;
     height: 48px;
   }
+
+  &:hover {
+    background: linear-gradient(
+      to bottom,
+      $color-green-light-opacity 25%,
+      $color-green-light 25%,
+      $color-green-accent 50%
+    );
+  }
+}
+
+.leaves {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  width: 100vw;
+
+  @include tablet {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
+  @include desktop {
+    grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+  }
 }
 
 .leaf {
-  padding: 50px;
+  padding: 10px 2vw;
   width: 64px;
   height: 64px;
-  @for $i from 0 through 3 {
-    $deg: $i * 90deg;
-    [data-rotation="#{$i}"] {
-      transform: rotate(#{$deg});
-    }
+
+  @include tel {
+    padding: 15px 4vw;
+  }
+  @include tablet {
+    padding: 20px 6vw;
+  }
+  @include desktop {
+    padding: 30px 8vw;
+  }
+}
+
+@for $i from 0 through 9 {
+  [data-rotation="#{$i}"] {
+    transform: rotate($i * 90deg);
+    padding-top: #{$i * 12}px;
   }
 }
 
