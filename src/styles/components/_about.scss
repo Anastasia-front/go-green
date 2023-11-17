@@ -1,6 +1,6 @@
 .about {
   @include flex(column, space-between, center);
-  gap: 100px;
+  gap: 70px;
 
   &-block {
     @include flex(row, space-between, center);
@@ -51,5 +51,6 @@
   &__right {
     text-align: right;
     align-items: end;
+    align-self: flex-start;
   }
 }
