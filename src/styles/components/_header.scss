@@ -21,14 +21,14 @@
 
   &__black-gradient {
     &::before {
-      height: 150px;
+      height: 100px;
       background: $color-grey-light;
     }
   }
 
   &-container {
     @include flex(row, space-between, center);
-    padding: 35px 12px;
+    padding: 5px 12px;
   }
 }
 
