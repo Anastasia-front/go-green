@@ -1,26 +1,23 @@
-import { NavLink } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
-import { pages } from "../constants";
 import { useChangeHeaderOnScroll } from "../hooks";
 
+import { Burger, Navigation } from ".";
 import { Logo } from "./Logo";
 
 export function Header() {
   const changeHeader = useChangeHeaderOnScroll();
-  console.log(changeHeader);
+
+  const desktop = useMediaQuery({ query: "(min-width:1200px)" });
+
   const additionalClass = changeHeader ? "black-gradient" : "";
 
   return (
     <header className={`header header__${additionalClass}`}>
       <div className="container header-container">
         <Logo />
-        <nav className="nav">
-          {pages.map((page, index) => (
-            <NavLink key={index} to={`/${page.route}`}>
-              {page.title}
-            </NavLink>
-          ))}
-        </nav>
+
+        {desktop ? <Navigation /> : <Burger />}
       </div>
     </header>
   );

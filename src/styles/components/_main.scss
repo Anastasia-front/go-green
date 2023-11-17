@@ -22,10 +22,14 @@
 }
 
 .company-name {
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 700;
   text-shadow: $text-shadow-3d;
   color: $color-white;
+
+  @include mobile {
+    font-size: 48px;
+  }
 
   &__second-word {
     color: $color-green-accent;
@@ -38,7 +42,12 @@
   z-index: 10;
 
   &-svg {
-    width: 90px;
-    height: 90px;
+    width: 40px;
+    height: 40px;
+
+    @include mobile {
+      width: 90px;
+      height: 90px;
+    }
   }
 }
