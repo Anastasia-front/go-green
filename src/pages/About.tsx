@@ -1,3 +1,5 @@
+import React from "react";
+
 import { AboutTextBlock, Banner } from "../components";
 import { about } from "../constants";
 import { getAltNameFromPath } from "../helpers";
@@ -35,25 +37,26 @@ export function About() {
   return (
     <div className="about">
       {aboutBlocks.map((block, index) => (
-        <section
-          key={index}
-          className={`about-block ${block.align} ${
-            block.isReverse ? "reverse" : ""
-          }`}
-        >
-          <img
-            src={block.imgSrc}
-            alt={getAltNameFromPath(block.imgSrc)}
-            className={`about-img ${block.className}`}
-          />
-          <AboutTextBlock
-            title={block.title}
-            description={block.description}
-            align={block.align}
-          />
-        </section>
+        <React.Fragment key={index}>
+          <section
+            className={`about-block ${block.align} ${
+              block.isReverse ? "reverse" : ""
+            }`}
+          >
+            <img
+              src={block.imgSrc}
+              alt={getAltNameFromPath(block.imgSrc)}
+              className={`about-img ${block.className}`}
+            />
+            <AboutTextBlock
+              title={block.title}
+              description={block.description}
+              align={block.align}
+            />
+          </section>
+          {index === 1 && <Banner />}
+        </React.Fragment>
       ))}
-      <Banner />
     </div>
   );
 }
