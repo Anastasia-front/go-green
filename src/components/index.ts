@@ -1,3 +1,4 @@
+export * from "./AboutTextBlock";
 export * from "./Banner";
 export * from "./Burger";
 export * from "./Button";

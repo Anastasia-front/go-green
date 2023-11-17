@@ -48,23 +48,23 @@ export const banner = {
 };
 
 export const about = {
-  abstracts: [
-    {
+  abstracts: {
+    first: {
       title: "People Working with us since 1975",
       description:
         "let's together rebuild our world to be better, let's make this earth green with various trees and plants that are around us for the sake of this. So that for the sake of this success, start with small things first, let's plant together, reforest, reforest and so on for comfort. our earth let's protect our earth",
     },
-    {
+    second: {
       title: "protect and take care of the earth",
       description:
         "let's together rebuild our world to be better, let's make this earth green with various trees and plants that are around us for the sake of this. So that for the sake of this success, start with small things first, let's plant together, reforest, reforest and so on for comfort. our earth let's protect our earth",
     },
-    {
+    third: {
       title: "reforestation, replanting, reforestation",
       description:
         "Reforestation can be defined as the process of replanting trees in areas that have been affected by natural disturbances like wildfires, drought, and insect and disease infestations — and unnatural ones like logging, mining, agricultural clearing, and development.",
     },
-  ],
+  },
 };
 
 export const services = {

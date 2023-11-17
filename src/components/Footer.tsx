@@ -9,16 +9,11 @@ import whatsApp from "../assets/svg/socials/whatsApp.svg";
 
 import { contact, leaf } from "../constants";
 
+import { getAltNameFromPath } from "../helpers";
+
 import { Logo } from ".";
 
 const socials = [facebook, telegram, whatsApp, instagram];
-
-const getAltNameFromPath = (filePath: string) => {
-  const fileName = filePath.split("/").pop(); // Get the last part of the path (filename)
-  const nameWithoutExtension = fileName?.split(".")[0]; // Remove the file extension
-  // You can customize this to format the name as needed
-  return nameWithoutExtension;
-};
 
 export function Footer() {
   const mobile = useMediaQuery({ query: "(max-width:399px)" });

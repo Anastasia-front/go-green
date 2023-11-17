@@ -1,0 +1,55 @@
+.about {
+  @include flex(column, space-between, center);
+  gap: 100px;
+
+  &-block {
+    @include flex(row, space-between, center);
+    gap: 30px;
+    position: relative;
+  }
+
+  &-img {
+    opacity: 0.5;
+
+    &__1 {
+      position: absolute;
+      top: -200px;
+      right: -100px;
+      width: 80%;
+      z-index: 3;
+    }
+    &__2 {
+      width: 50%;
+    }
+    &__3 {
+      width: 40%;
+      margin-top: -100px;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-block {
+  @include flex(column, center, center);
+  gap: 30px;
+  width: 50%;
+  text-align: center;
+  z-index: 10;
+
+  p {
+    width: 88%;
+  }
+
+  &__left {
+    text-align: left;
+    align-items: start;
+  }
+
+  &__right {
+    text-align: right;
+    align-items: end;
+  }
+}
