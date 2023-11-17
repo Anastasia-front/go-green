@@ -32,12 +32,22 @@ export const home = {
   description: "let's build a green life on our earth together with us.",
 };
 
-export const about = {
-  banner: {
+export const banner = {
+  main: {
     title: "Let`s Join With Us",
     description:
       "by doing it together we can definitely change the world to be more natural",
   },
+  person: {
+    Olivia: {
+      name: "Olivia Slive",
+      about:
+        "Hi my name is Olivia Slive I am a member here and I have been participating in this activity for about a year and well it not only restores the world well but is also very fun in every process that goes through.Come join GoGreen with us",
+    },
+  },
+};
+
+export const about = {
   abstracts: [
     {
       title: "People Working with us since 1975",
@@ -93,11 +103,6 @@ export const services = {
   secondSection: {
     title: "Testimonials",
     subtitle: "",
-    banner: {
-      name: "Olivia Slive",
-      about:
-        "Hi my name is Olivia Slive I am a member here and I have been participating in this activity for about a year and well it not only restores the world well but is also very fun in every process that goes through.Come join GoGreen with us",
-    },
   },
 };
 
