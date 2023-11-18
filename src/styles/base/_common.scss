@@ -80,6 +80,7 @@ a {
 a,
 button {
   cursor: pointer;
+  transition: $cubic;
 }
 
 .container {

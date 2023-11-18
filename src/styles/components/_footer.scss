@@ -37,7 +37,7 @@
   background: $color-bg-grey;
   @include flex(row, center, center);
   border-radius: 50%;
-  fill: $color-black;
+  transition: $cubic;
 
   img {
     width: 48px;
@@ -57,7 +57,7 @@
 .leaves {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
-  gap: 1rem;
+  gap: 20px;
   justify-content: center;
   width: 100vw;
 
