@@ -16,23 +16,23 @@ export function Banner({
   title = "",
   description = "",
 }: Props) {
-  return (
-    <div className="banner">
-      {type === "main" ? (
-        <div className="banner-column__main">
-          <h2 className="banner-title">{banner.main.title}</h2>
-          <p className="banner-description">{banner.main.description}</p>
-          <Button text={buttons.main} />
+  return type === "main" ? (
+    <div className="banner banner-main">
+      <div className="banner-column__main">
+        <h2 className="banner-title">{banner.main.title}</h2>
+        <p className="banner-description">{banner.main.description}</p>
+        <Button text={buttons.main} />
+      </div>
+    </div>
+  ) : (
+    <div className="banner banner-person">
+      <div className="banner-row">
+        <img className="banner-photo" src={src} alt={alt} />
+        <div className="banner-column__person">
+          <h2 className="banner-title banner-title__person">{title}</h2>
+          <p>{description}</p>
         </div>
-      ) : (
-        <div className="banner-row">
-          <img className="banner-photo" src={src} alt={alt} />
-          <div className="banner-column__person">
-            <h2 className="banner-title banner-title__person">{title}</h2>
-            <p>{description}</p>
-          </div>
-        </div>
-      )}
+      </div>
     </div>
   );
 }

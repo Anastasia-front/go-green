@@ -42,7 +42,7 @@ export const banner = {
     Olivia: {
       name: "Olivia Slive",
       about:
-        "Hi my name is Olivia Slive I am a member here and I have been participating in this activity for about a year and well it not only restores the world well but is also very fun in every process that goes through.Come join GoGreen with us",
+        "Hi my name is Olivia Slive I am a member here and I have been participating in this activity for about a year and well it not only restores the world well but is also very fun in every process that goes through. Come join GoGreen with us!",
     },
   },
 };
@@ -71,37 +71,40 @@ export const services = {
   firstSection: {
     title: { green: "5000+ ", black: "WORKING WITH US" },
     subtitle: "What We Are Doing",
-    content: [
-      {
-        title: "use of wind  ",
+    content: {
+      first: {
+        title: "Use of wind",
         description:
-          "Wind direction and velocity have significant influence on crop growth. ",
+          "Wind direction and velocity have significant influence on crop growth",
       },
-      {
+      second: {
         title: "Eco System",
         description:
-          "They maintain the physical and chemical integrity of those ecosystems. ",
+          "They maintain the physical and chemical integrity of those ecosystems",
       },
-      {
+      third: {
         title: "Protecting",
         description:
           "Forest refining means the complete elimination of lianes, weed and defective trees, shrubs and herbs, subject to silvicultural desirability",
       },
-      {
-        title: "Water Refinning  ",
+      fourth: {
+        title: "Water Refinning",
         description:
-          " filtering sediments and other pollutants from the water in the soil before it reaches a water source, such as a stream, lake or river. ",
+          " filtering sediments and other pollutants from the water in the soil before it reaches a water source, such as a stream, lake or river",
       },
-      {
+      fifth: {
         title: "Recycling",
         description:
-          "As recycling saves energy it also reduces greenhouse gas emissions, which helps to tackle climate change.",
+          "As recycling saves energy it also reduces greenhouse gas emissions, which helps to tackle climate change",
       },
-      { title: "Save Animal", description: "protect animals from extinction " },
-    ],
+      sixth: {
+        title: "Save Animal",
+        description: "protect animals from extinction",
+      },
+    },
   },
   secondSection: {
-    title: "Testimonials",
+    title: { green: "our ", black: "Testimonials" },
     subtitle: "",
   },
 };

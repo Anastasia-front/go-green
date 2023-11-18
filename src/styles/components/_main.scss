@@ -56,8 +56,15 @@
   background: $color-green-light;
   border-radius: 16px;
   padding: 14px 20px 42px;
-  width: 90%;
   margin: 0 auto;
+
+  &-main {
+    width: 70%;
+  }
+
+  &-person {
+    width: 90%;
+  }
 
   &-column {
     &__main {
@@ -80,6 +87,7 @@
 
   &-title {
     color: $color-black;
+    text-transform: capitalize;
 
     &__person {
       text-shadow: $text-shadow-3d;
