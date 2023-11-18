@@ -9,4 +9,5 @@ export * from "./Logo";
 export * from "./Navigation";
 export * from "./Person";
 export * from "./SharedLayout";
+export * from "./blog";
 export * from "./services";

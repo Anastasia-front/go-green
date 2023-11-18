@@ -1,0 +1,145 @@
+.blog {
+  &-content {
+    @include flex(row, center, flex-start);
+    gap: 20px;
+  }
+
+  &-sections {
+    @include flex(column, center, flex-start);
+    gap: 88px;
+    padding-top: 200px;
+  }
+
+  &-sectionTitle {
+    font-size: $font-size-md;
+    font-weight: 700;
+    color: $color-black;
+    position: relative;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 65px;
+      height: 2px;
+      border-radius: 7px;
+      background: $color-green-accent;
+    }
+  }
+}
+
+.posts {
+  @include flex(column, center, center);
+  gap: 40px;
+}
+
+.post {
+  @include flex(column, center, center);
+  gap: 30px;
+  border: 1px solid $color-grey;
+  width: 575px;
+  padding-bottom: 75px;
+
+  &-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &-content {
+    @include flex(column, center, flex-start);
+    gap: 16px;
+    padding: 0 20px 0 24px;
+  }
+
+  &-info {
+    @include flex(row, center, center);
+    gap: 30px;
+
+    &__user,
+    &__comment {
+      @include flex(row, center, center);
+      gap: 7px;
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+    color: $color-black;
+  }
+
+  &-description {
+    width: 90%;
+  }
+
+  &-button {
+    align-self: end;
+    margin-right: 70px;
+  }
+}
+
+.recent {
+  &-posts {
+    @include flex(column, center, flex-start);
+    gap: 24px;
+  }
+
+  &-block {
+    @include flex(row, flex-start, center);
+    gap: 24px;
+  }
+
+  &-text {
+    @include flex(column, center, flex-start);
+    gap: 12px;
+  }
+
+  &-title {
+    font-size: $font-size-md;
+    font-weight: 700;
+    color: $color-black;
+  }
+
+  &-date {
+    font-size: $font-size-sm;
+    font-style: normal;
+    font-weight: 700;
+    color: $color-grey-light;
+  }
+}
+
+.flicks {
+  @include flex(row, flex-start, center);
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 350px;
+}
+
+.flick {
+  width: 90px;
+  height: 88px;
+}
+
+.tags {
+  @include flex(row, flex-start, center);
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 14px;
+  max-width: 450px;
+}
+
+.margin-top {
+  margin-top: 16px;
+}
+
+.tag {
+  border-radius: 8px;
+  background: $color-grey-light;
+  padding: 12px 54px;
+
+  p {
+    font-weight: 700;
+    font-size: $font-size-md;
+  }
+}

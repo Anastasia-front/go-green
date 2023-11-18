@@ -67,8 +67,9 @@ export function Services() {
 
         <div className="services-textContent">
           <ul className="services-textContent__list">
-            {firstBlocks.map((block) => (
+            {firstBlocks.map((block, index) => (
               <FirstSectionTextBlock
+                key={index}
                 title={block.title}
                 description={block.description}
                 src={block.imgSrc}

@@ -116,25 +116,21 @@ export const blog = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       person: "Mira",
-      commentsNumber: "3",
+      commentsNumber: 3,
     },
     {
       title: "Together we can for forest",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       person: "Alice",
-      commentsNumber: "2",
+      commentsNumber: 1,
     },
     {
       title: "Natural`s World",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       person: "Chris",
-      commentsNumber: "7",
-    },
-
-    {
-      description: "protect animals from extinction ",
+      commentsNumber: 7,
     },
   ],
   flickPhotos: { title: "Flick Photos" },
@@ -148,7 +144,7 @@ export const blog = {
   },
   tags: {
     title: "Tags",
-    tags: ["Ecosystem", "Organic", "Solar Energy", "Wind Energy", "Plants"],
+    tags: ["Ecosystem", "Organic", "Plants", "Wind Energy", "Solar Energy"],
   },
 };
 
