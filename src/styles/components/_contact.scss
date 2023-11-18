@@ -1,0 +1,52 @@
+.contact {
+  &-section {
+    @include flex(column, center, center);
+    gap: 115px;
+  }
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(55%, 1fr));
+  row-gap: 50px;
+  justify-content: center;
+  width: 100vw;
+
+  @include mobile {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    row-gap: 80px;
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    row-gap: 122px;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.person {
+  @include flex(column, center, center);
+  gap: 16px;
+
+  img {
+    width: 216px;
+    height: 216px;
+  }
+
+  &-info {
+    @include flex(column, center, center);
+
+    &__name {
+      color: $color-black;
+      text-transform: capitalize;
+    }
+
+    &__position {
+      font-size: 16px;
+      text-transform: lowercase;
+    }
+  }
+}

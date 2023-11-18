@@ -152,11 +152,14 @@ export const blog = {
   },
 };
 
-export const team = [
-  { name: "Wade Warren", position: "Admin" },
-  { name: "Soham", position: "Admin" },
-  { name: "Tanya", position: "Admin" },
-  { name: "Kristin", position: "Admin" },
-  { name: "Gregory", position: "Admin" },
-  { name: "Darlene", position: "" },
-];
+export const team = {
+  title: "Team",
+  members: [
+    { name: "Wade Warren", position: "Admin" },
+    { name: "Soham", position: "Admin" },
+    { name: "Tanya", position: "Admin" },
+    { name: "Kristin", position: "Admin" },
+    { name: "Gregory", position: "Admin" },
+    { name: "Darlene", position: "Admin" },
+  ],
+};

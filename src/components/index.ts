@@ -7,5 +7,6 @@ export * from "./Footer";
 export * from "./Header";
 export * from "./Logo";
 export * from "./Navigation";
+export * from "./Person";
 export * from "./SharedLayout";
 export * from "./services";

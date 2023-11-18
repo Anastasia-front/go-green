@@ -5,3 +5,5 @@ export const leaf = "leaf as decoration image";
 export const logo = "logo of company";
 
 export const svg = "svg that decorate the text block";
+
+export const person = "person of our team";
