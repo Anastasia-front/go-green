@@ -1,6 +1,6 @@
 # GoGreen website created on React + TypeScript + Vite
 
-This is beautiful website for lovers of beautiful design and plants
+This is beautiful website for lovers of beautiful design and plants deploy in [![Netlify Status](https://api.netlify.com/api/v1/badges/9c02b926-3595-452a-b9dc-32116e46a0c5/deploy-status)](https://app.netlify.com/sites/go-green-website/deploys)
 
 ## Table of Contents
 
