@@ -122,13 +122,14 @@
     padding: 20px 0 0 20px;
     width: 100px;
     height: 100px;
+
     @include mobile {
       width: 150px;
       height: 150px;
     }
     @include tablet {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
     }
     @include desktop {
       width: 280px;
