@@ -1,6 +1,6 @@
 .services {
   @include flex(column, center, center);
-  gap: 200px;
+  gap: 100px;
 
   &-section {
     @include flex(column, center, center);
@@ -12,7 +12,6 @@
     text-transform: uppercase;
     font-weight: 700;
     line-height: 122%;
-    font-size: var(--font-size-lg);
 
     span {
       color: $color-green-accent;
@@ -30,7 +29,7 @@
         position: absolute;
         top: 50%;
         left: -85px;
-        width: 183px;
+        width: 180px;
         height: 1px;
         background: $color-grey;
       }
@@ -40,20 +39,19 @@
       &::after {
         content: "";
         position: absolute;
-
-        width: 183px;
+        width: 20vw;
         height: 1px;
         background: $color-grey;
       }
 
       &::before {
-        left: -200px;
+        left: -22vw;
         top: 50%;
       }
 
       &::after {
         top: 55%;
-        left: 240px;
+        right: -22vw;
 
         @include desktop {
           left: 170px;
@@ -67,7 +65,7 @@
 
     @include tablet {
       flex-direction: row;
-      gap: 60px;
+      gap: 40px;
     }
     @include desktop {
       gap: 20px;
@@ -133,7 +131,7 @@
     height: 100%;
 
     @include desktop {
-      height: 150px;
+      height: 110px;
     }
 
     h4 {

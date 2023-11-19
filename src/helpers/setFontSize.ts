@@ -4,7 +4,7 @@ if (screenWidth < 480) {
   document.documentElement.style.setProperty("--font-size-xs", "12px");
   document.documentElement.style.setProperty("--font-size-sm", "16px");
   document.documentElement.style.setProperty("--font-size-md", "18px");
-  document.documentElement.style.setProperty("--font-size-lg", "36px");
+  document.documentElement.style.setProperty("--font-size-lg", "30px");
   document.documentElement.style.setProperty("--font-size-xl", "48px");
 } else if (screenWidth < 768) {
   document.documentElement.style.setProperty("--font-size-xs", "14px");

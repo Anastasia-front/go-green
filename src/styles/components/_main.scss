@@ -1,5 +1,15 @@
 .main {
-  padding-top: 170px;
+  padding-top: 100px;
+
+  @include mobile {
+    padding-top: 110px;
+  }
+  @include tablet {
+    padding-top: 140px;
+  }
+  @include desktop {
+    padding-top: 170px;
+  }
 }
 
 .button {
@@ -22,14 +32,10 @@
 }
 
 .company-name {
-  font-size: 24px;
+  font-size: var(--font-size-lg);
   font-weight: 700;
   text-shadow: $text-shadow-3d;
   color: $color-white;
-
-  @include mobile {
-    font-size: 48px;
-  }
 
   &__second-word {
     color: $color-green-accent;
@@ -46,8 +52,16 @@
     height: 40px;
 
     @include mobile {
-      width: 90px;
-      height: 90px;
+      width: 50px;
+      height: 50px;
+    }
+    @include tablet {
+      width: 60px;
+      height: 60px;
+    }
+    @include desktop {
+      width: 70px;
+      height: 70px;
     }
   }
 }
@@ -83,6 +97,7 @@
   &-row {
     @include flex(row, center, center);
     gap: 30px;
+    padding-right: 30px;
   }
 
   &-title {
@@ -91,7 +106,6 @@
 
     &__person {
       text-shadow: $text-shadow-3d;
-      font-size: var(--font-size-lg);
     }
   }
 
