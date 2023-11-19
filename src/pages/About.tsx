@@ -36,27 +36,29 @@ const aboutBlocks = [
 export function About() {
   return (
     <div className="about">
-      {aboutBlocks.map((block, index) => (
-        <React.Fragment key={index}>
-          <section
-            className={`about-block ${block.align} ${
-              block.isReverse ? "reverse" : ""
-            }`}
-          >
-            <img
-              src={block.imgSrc}
-              alt={getAltNameFromPath(block.imgSrc)}
-              className={`about-img ${block.className}`}
-            />
-            <AboutTextBlock
-              title={block.title}
-              description={block.description}
-              align={block.align}
-            />
-          </section>
-          {index === 1 && <Banner />}
-        </React.Fragment>
-      ))}
+      <ul>
+        {aboutBlocks.map((block, index) => (
+          <React.Fragment key={index}>
+            <li
+              className={`about-block ${block.align} ${
+                block.isReverse ? "reverse" : ""
+              }`}
+            >
+              <img
+                src={block.imgSrc}
+                alt={getAltNameFromPath(block.imgSrc)}
+                className={`about-img ${block.className}`}
+              />
+              <AboutTextBlock
+                title={block.title}
+                description={block.description}
+                align={block.align}
+              />
+            </li>
+            {index === 1 && <Banner />}
+          </React.Fragment>
+        ))}
+      </ul>
     </div>
   );
 }
