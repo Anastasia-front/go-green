@@ -10,10 +10,6 @@ body {
   background-color: $color-white-green;
   margin: 0;
   font-weight: 400;
-
-  @include tablet {
-    font-size: var(--font-size-md);
-  }
 }
 
 #root {

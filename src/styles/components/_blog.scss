@@ -1,17 +1,35 @@
 .blog {
   &-content {
-    @include flex(row, center, flex-start);
-    gap: 20px;
+    @include flex(column, center, flex-start);
+    gap: 50px;
+
+    @include tablet {
+      flex-direction: row;
+    }
   }
 
   &-sections {
     @include flex(column, center, flex-start);
-    gap: 88px;
-    padding-top: 200px;
+    gap: 30px;
+
+    @include tablet {
+      padding-top: 200px;
+      gap: 88px;
+      width: 40%;
+    }
+  }
+
+  &-section {
+    @include tablet {
+      width: 40%;
+    }
+    @media screen and (min-width: 855px) {
+      width: 100%;
+    }
   }
 
   &-sectionTitle {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     font-weight: 700;
     color: $color-black;
     position: relative;
@@ -39,8 +57,19 @@
   @include flex(column, center, center);
   gap: 30px;
   border: 1px solid $color-grey;
-  width: 575px;
+  width: 100%;
+  min-width: 300px;
   padding-bottom: 75px;
+
+  @include mobile {
+    min-width: 400px;
+  }
+  @include tablet {
+    min-width: 450px;
+  }
+  @include desktop {
+    min-width: 575px;
+  }
 
   &-img {
     width: 100%;
@@ -96,7 +125,7 @@
   }
 
   &-title {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     font-weight: 700;
     color: $color-black;
   }
@@ -113,7 +142,18 @@
   @include flex(row, flex-start, center);
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 350px;
+  width: 100%;
+  min-width: 300px;
+
+  @include mobile {
+    min-width: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 300px;
+  }
+  @media screen and (min-width: 855px) {
+    width: 350px;
+  }
 }
 
 .flick {
@@ -126,7 +166,11 @@
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 14px;
-  max-width: 450px;
+  width: 100%;
+
+  @include desktop {
+    width: 400px;
+  }
 }
 
 .margin-top {
@@ -140,6 +184,5 @@
 
   p {
     font-weight: 700;
-    font-size: var(--font-size-md);
   }
 }

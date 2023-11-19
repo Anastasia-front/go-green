@@ -7,13 +7,13 @@ export function Blog() {
         <Posts />
       </section>
       <div className="blog-sections">
-        <section>
+        <section className="blog-section">
           <RecentPosts />
         </section>
-        <section>
+        <section className="blog-section">
           <Flicks />
         </section>
-        <section>
+        <section className="blog-section">
           <Tags />
         </section>
       </div>

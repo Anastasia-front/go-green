@@ -95,9 +95,13 @@
   }
 
   &-row {
-    @include flex(row, center, center);
-    gap: 30px;
+    @include flex(column, center, center);
     padding-right: 30px;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 30px;
+    }
   }
 
   &-title {
