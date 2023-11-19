@@ -60,6 +60,7 @@
   width: 100%;
   min-width: 300px;
   padding-bottom: 75px;
+  cursor: pointer;
 
   @include mobile {
     min-width: 400px;
@@ -117,6 +118,7 @@
   &-block {
     @include flex(row, flex-start, center);
     gap: 24px;
+    cursor: pointer;
   }
 
   &-text {
@@ -157,6 +159,7 @@
 }
 
 .flick {
+  cursor: pointer;
   width: 90px;
   height: 88px;
 }
@@ -181,6 +184,7 @@
   border-radius: 8px;
   background: $color-grey-light;
   padding: 12px 54px;
+  cursor: pointer;
 
   p {
     font-weight: 700;
