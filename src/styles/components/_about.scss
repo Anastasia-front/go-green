@@ -1,6 +1,16 @@
 .about {
   @include flex(column, space-between, center);
-  gap: 70px;
+  gap: 30px;
+
+  @include mobile {
+    gap: 40px;
+  }
+  @include tablet {
+    gap: 55px;
+  }
+  @include desktop {
+    gap: 70px;
+  }
 
   &-block {
     @include flex(row, space-between, center);
@@ -15,8 +25,20 @@
       position: absolute;
       top: -200px;
       right: -100px;
-      width: 80%;
+      width: 130%;
       z-index: 3;
+
+      @include mobile {
+        width: 100%;
+        right: -170px;
+      }
+      @include tablet {
+        width: 90%;
+        right: -220px;
+      }
+      @include desktop {
+        width: 80%;
+      }
     }
     &__2 {
       width: 50%;
@@ -52,5 +74,26 @@
     text-align: right;
     align-items: end;
     align-self: flex-start;
+  }
+}
+
+ul.about > li.about-block:first-child .text-block {
+  width: 70%;
+  p {
+    width: 140%;
+  }
+
+  @include tablet {
+    width: 77%;
+    p {
+      width: 122%;
+    }
+  }
+
+  @include desktop {
+    width: 40%;
+    p {
+      width: 100%;
+    }
   }
 }
