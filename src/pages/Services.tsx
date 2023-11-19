@@ -84,8 +84,9 @@ export function Services() {
             alt={getAltNameFromPath(plant)}
           />
           <ul className="services-textContent__list">
-            {secondBlocks.map((block) => (
+            {secondBlocks.map((block, index) => (
               <FirstSectionTextBlock
+                key={index}
                 title={block.title}
                 description={block.description}
                 src={block.imgSrc}

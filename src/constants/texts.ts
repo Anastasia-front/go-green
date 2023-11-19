@@ -34,7 +34,7 @@ export const home = {
 
 export const banner = {
   main: {
-    title: "Let`s Join With Us",
+    title: "Let's Join With Us",
     description:
       "by doing it together we can definitely change the world to be more natural",
   },
