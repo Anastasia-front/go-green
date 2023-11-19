@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "Lora", serif;
-  font-size: $font-size-sm;
+  font-size: var(--font-size-xs);
   line-height: 1.6;
   color: $color-black;
   background-color: $color-white-green;
@@ -12,7 +12,7 @@ body {
   font-weight: 400;
 
   @include tablet {
-    font-size: $font-size-md;
+    font-size: var(--font-size-md);
   }
 }
 

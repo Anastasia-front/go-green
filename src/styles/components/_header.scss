@@ -154,7 +154,7 @@
       position: absolute;
       top: 0;
       right: 20px;
-      background: $color-grey;
+      background: $color-grey-light;
       padding: 30px;
 
       @include mobile {
@@ -232,7 +232,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: $color-grey;
+    background: $color-grey-light;
     transform: translateY(-100%);
 
     @include mobile {

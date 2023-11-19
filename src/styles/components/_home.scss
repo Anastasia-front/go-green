@@ -15,15 +15,16 @@
     max-width: 660px;
     font-weight: 700;
     text-shadow: $text-shadow-3d;
-    font-size: $font-size-xl;
+    font-size: var(--font-size-xl);
 
     &__font-size {
-      font-size: $font-size-xl !important;
+      font-size: var(--font-size-xl) !important;
     }
   }
 
   &-description {
-    max-width: 418px;
+    font-size: var(--font-size-md);
+    max-width: 300px;
   }
 
   button {

@@ -11,7 +11,7 @@
   }
 
   &-sectionTitle {
-    font-size: $font-size-md;
+    font-size: var(--font-size-lg);
     font-weight: 700;
     color: $color-black;
     position: relative;
@@ -96,13 +96,13 @@
   }
 
   &-title {
-    font-size: $font-size-md;
+    font-size: var(--font-size-md);
     font-weight: 700;
     color: $color-black;
   }
 
   &-date {
-    font-size: $font-size-sm;
+    font-size: var(--font-size-xs);
     font-style: normal;
     font-weight: 700;
     color: $color-grey-light;
@@ -140,6 +140,6 @@
 
   p {
     font-weight: 700;
-    font-size: $font-size-md;
+    font-size: var(--font-size-md);
   }
 }

@@ -42,7 +42,10 @@ $screen-desktop: 1200px;
 $cubic: all 0.3s ease;
 
 //font-size
-$font-size-sm: 16px;
-$font-size-md: 24px;
-$font-size-lg: 48px;
-$font-size-xl: 66px;
+:root {
+  --font-size-xs: 16px;
+  --font-size-sm: 20px;
+  --font-size-md: 24px;
+  --font-size-lg: 48px;
+  --font-size-xl: 66px;
+}

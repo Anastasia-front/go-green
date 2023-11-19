@@ -12,6 +12,7 @@
     text-transform: uppercase;
     font-weight: 700;
     line-height: 122%;
+    font-size: var(--font-size-lg);
 
     span {
       color: $color-green-accent;
@@ -100,16 +101,17 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
-    height: 100px;
+    height: 130px;
 
     h4 {
+      font-size: var(--font-size-md);
       color: $color-green-accent;
       font-weight: 600;
     }
 
     p {
-      font-size: $font-size-sm;
-      width: 300px;
+      font-size: var(--font-size-sm);
+      width: 320px;
     }
   }
 
