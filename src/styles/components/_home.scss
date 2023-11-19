@@ -1,9 +1,11 @@
 .home {
-  padding: 7vh 0;
+  @include flex(column, center, flex-start);
+  height: 100%;
 
   &-content {
     @include flex(column, center, flex-start);
     gap: 24px;
+    padding-top: 20px;
   }
 
   &-title {

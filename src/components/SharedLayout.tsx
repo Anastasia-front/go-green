@@ -11,7 +11,7 @@ export const SharedLayout = () => {
   return (
     <>
       <Header />
-      <main className="main container">
+      <main className={`container ${isRootPath ? "home" : "main"} `}>
         <Suspense fallback={<div>Loading page...</div>}>
           <Outlet />
         </Suspense>
