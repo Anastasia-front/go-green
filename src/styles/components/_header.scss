@@ -60,6 +60,10 @@
   font-size: var(--font-size-md);
   z-index: 7;
 
+  @include desktop {
+    font-size: var(--font-size-sm);
+  }
+
   a:hover {
     text-shadow: $text-shadow-3d;
   }
