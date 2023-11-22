@@ -12,7 +12,7 @@ This is beautiful website for lovers of beautiful design and plants deploy in [!
 
 ## Project overview
 
-With its help, the CarpTravel company provides information about its services, as well as provides an opportunity for clients to communicate with the agency and cooperate with the company as an employee.
+With its help, the GoGreen company provides information about its services, as well as provides an opportunity for people to communicate with the agency and cooperate with the company.
 
 ## Technologies and libraries used
 
