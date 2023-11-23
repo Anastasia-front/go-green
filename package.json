@@ -1,5 +1,6 @@
 {
   "name": "go-green",
+  "homepage": "https://go-green-website.netlify.app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
